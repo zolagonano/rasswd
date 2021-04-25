@@ -3,6 +3,13 @@ name = "rasswd"
 version = "0.1.0"
 authors = ["Zola Gonano <zolagonano@protonmail.com>"]
 edition = "2018"
+description = "rasswd is a simple password generator implemented in rust"
+homepage = "https://github.com/zolagonano/rasswd.git"
+repository = "https://github.com/zolagonano/rasswd.git"
+keywords = ["password-generator", "password", "minimal", "generator"]
+categories = ["command-line-utilities"]
+license = "MIT"
+readme = "README.md"
 
 [dependencies]
 getrandom = "0.2"
