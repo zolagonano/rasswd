@@ -15,7 +15,7 @@ const PUNCTUATION: [char; 32] = [
     '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~',
 ];
 
-const HELP_MESSAGE: &'static str = r#"rasswd 0.1.0
+const HELP_MESSAGE: &str = r#"rasswd 0.1.0
 Zola Gonano <zolagonano@protonmail.com>
 A fast and simple password generator
 
@@ -41,10 +41,10 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() > 1 {
         if args[1] != "--help" && args[1] != "-h" && args[1] != "help" && args[1] != "h" {
-            let is_lower = args[1].contains("l");
-            let is_upper = args[1].contains("L");
-            let is_punc = args[1].contains("p");
-            let is_digit = args[1].contains("d");
+            let is_lower = args[1].contains('l');
+            let is_upper = args[1].contains('L');
+            let is_punc = args[1].contains('p');
+            let is_digit = args[1].contains('d');
 
             let password_length: u8 = match args.len() > 2 {
                 true => args[2]
