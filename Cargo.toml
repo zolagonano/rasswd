@@ -11,5 +11,8 @@ categories = ["command-line-utilities"]
 license = "MIT"
 readme = "README.md"
 
+[profile.release]
+lto = true
+
 [dependencies]
 getrandom = "0.2"
